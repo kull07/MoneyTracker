@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Money Trecker</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_product_name">Enter product name</string>
+    <string name="product_price">0</string>
+    <string name="add_button">+</string>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingSmol">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/productName"
+            android:hint="@string/enter_product_name"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"/>
+        <EditText
+            android:id="@+id/productPrice"
+            android:hint="@string/product_price"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <Button
+            android:id="@+id/approve"
+            android:text="@string/add_button"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/big_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainback">
+        <ListView
+        android:id="@+id/list_item"
+        tools:listitem="@layout/item"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/paddingSmol"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

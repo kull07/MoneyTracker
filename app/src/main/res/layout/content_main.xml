@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.application.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="53dp"
+        android:text="My Save"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Your Name"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        tools:layout_editor_absoluteX="73dp" />
+
+</android.support.constraint.ConstraintLayout>
